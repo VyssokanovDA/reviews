@@ -31,6 +31,7 @@ if(isset($_GET['id'])):
 
     $reviews = ($res['result']['reviews']);
     $name = ($res['result']['name']);
+    $rating = ($res['result']['rating']);
          //var_dump($res);
     $last_good = array();
 

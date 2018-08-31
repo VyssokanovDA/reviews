@@ -8,7 +8,7 @@
 
     </div>
 <?php
-include 'settings.php';
+/*include 'settings.php';
 if(is_array($reviews)){
     $n = 0;
     $time = array_column($reviews, 'time');
@@ -22,7 +22,7 @@ if(is_array($reviews)){
         }
     }
     var_dump($last_good);
-}
+}*/
 
 
 ?>

@@ -1,5 +1,5 @@
 <?php
-include 'settings.php';
+include_once 'settings.php';
 
 /**
  * Created by PhpStorm.
