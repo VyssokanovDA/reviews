@@ -4,8 +4,7 @@ session_start();
 date_default_timezone_set("Europe/Moscow");
 
 $api_key = "AIzaSyBwJS_02I7LvhKU6l9C07L8I1HzWLokiLM";  // insert the api key
-?>
-<?
+
     //получаем запись по id
 if(isset($_GET['id'])):
 	$place_id = strip_tags(htmlspecialchars(trim($_GET['id'])));
@@ -26,16 +25,17 @@ if(isset($_GET['id'])):
 
 
     /*****  Decode the received json data into php array  *****/
-
     $res = json_decode($result,true);
-
-    $reviews = ($res['result']['reviews']);
     $name = ($res['result']['name']);
     $rating = ($res['result']['rating']);
-         //var_dump($res);
+    $address = ($res['result']['formatted_address']);
+    //var_dump($res);
     $last_good = array();
+    $reviews = ($res['result']['reviews']);
+    $_SESSION["reviews"] = $reviews;
 
-     ?>
+
+?>
 <?else:?>
     <!--<h1>Не введен id компании</h1>-->
     <?/*die(); */?>
