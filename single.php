@@ -33,4 +33,12 @@ if(isset($_SESSION["reviews"])) {
         }
     }
 }
-?>
+
+/*if( isset( $_POST['back'] ) ){
+
+    return;
+}
+*/?><!--
+<form method="POST">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="back">Назад</button>
+</form>-->

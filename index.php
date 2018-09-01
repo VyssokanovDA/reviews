@@ -17,6 +17,7 @@
 <div class="container">
     <div class="row">
         <!-- Content -->
+        <div class="col-md-9"></div>
         <?php include 'includes/sidebar.php'; ?>
 
         <div class="clearfix"></div>
